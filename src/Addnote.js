@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Addnote = ({ handleaddNote }) => {
+const Addnote = ({ handleAddNote }) => {
     const [noteText, setNoteText] = useState('');
 
     const CharacterLimit = 200;
@@ -13,7 +13,7 @@ const Addnote = ({ handleaddNote }) => {
 
     const handleSaveclick = () => {
         if (noteText.trim().length > 0) {
-            handleaddNote(noteText);
+            handleAddNote(noteText)
             setNoteText('');
         }
     };
