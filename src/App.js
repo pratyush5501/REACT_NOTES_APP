@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import NotesList from "./components/NotesList";
 import {nanoid} from 'nanoid';
-import Search from "./components/Search";
-import Header from "./components/Header";
+import Search    from "./components/Search";
+import Header    from "./components/Header";
+import NotesList from "./components/NotesList";
 
 const App = () =>{
   const [notes, setnotes] = useState([{
